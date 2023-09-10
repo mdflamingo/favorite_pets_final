@@ -10,9 +10,11 @@
 
 ## Установка
 1. Клонируйте репозиторий на свой компьютер:
-
-```git clone git@github.com:mdflamingo/kittygram_final.git```
-```cd kittygram```
+```git clone git@github.com:mdflamingo/kittygram_final.git
+```
+```
+cd kittygram
+```
 
 3. Создайте файл .env и заполните его своими данными. Перечень данных указан в корневой директории проекта в файле .env.
 
@@ -25,7 +27,6 @@
   docker build -t username/kittygram_backend .
   cd ../nginx
   docker build -t username/kittygram_gateway . 
-
 ```
 2. Загрузите образы на DockerHub:
 ```
@@ -35,9 +36,11 @@
 ```
 ## Деплой на сервере
 1. Подключитесь к удаленному серверу
-```ssh -i путь_до_файла_с_SSH_ключом/название_файла_с_SSH_ключом имя_пользователя@ip_адрес_сервера```
+```
+ssh -i путь_до_файла_с_SSH_ключом/название_файла_с_SSH_ключом имя_пользователя@ip_адрес_сервера
+```
 
-2. Создайте на сервере директорию kittygram через терминал
+3. Создайте на сервере директорию kittygram через терминал
 ```
   mkdir kittygram
 ```
